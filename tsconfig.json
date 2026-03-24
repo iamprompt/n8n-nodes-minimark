@@ -3,6 +3,11 @@
 		"strict": true,
 		"module": "commonjs",
 		"moduleResolution": "node",
+		"baseUrl": ".",
+		"paths": {
+			"minimark": ["node_modules/minimark/dist/index.d.mts"],
+			"minimark/stringify": ["node_modules/minimark/dist/stringify.d.mts"]
+		},
 		"target": "es2019",
 		"lib": ["es2019", "es2020", "es2022.error"],
 		"removeComments": true,
